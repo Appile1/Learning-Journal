@@ -1,0 +1,381 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 65px;
+  border-bottom: 1px solid red;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3em;
+  margin-left: 0.4em;
+}
+
+.links {
+  display: flex;
+  font-size: 0.86em;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section Styles */
+.intro {
+  width: 100%;
+  background-image: url("../Images/article-image-hero (1).png");
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.intro1 {
+  width: 100%;
+  background-image: url("../Images/article-image-hero (1).png");
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0.9em 0.8em;
+}
+
+.content-container {
+  max-width: 800px;
+  margin: 0 auto;
+
+  border-radius: 10px;
+}
+
+.date {
+  margin-top: 10px;
+  color: #ffffff;
+  margin-bottom: 13px;
+  font-weight: 100;
+  font-size: 12px;
+}
+
+.heading {
+  margin-bottom: 10px;
+  color: #ffffff;
+  max-width: 200px;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.description {
+  color: white;
+  font-size: 13.5px;
+}
+
+.skills-heading,
+.contact-heading {
+  font-size: 1.2em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.skills-list,
+.contact-list {
+  list-style: none;
+  padding: 0;
+  font-size: 1em;
+}
+
+.skills-list li,
+.contact-list li {
+  margin-bottom: 0.5em;
+}
+
+.contact-list a {
+  color: #ffeb3b;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}
+
+/* Blog Styles */
+.blog {
+  background-color: #fff;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.blog-img {
+  width: 100%;
+  height: auto;
+}
+
+.blog-date {
+  color: #999;
+  font-size: 0.9em;
+  margin: 10px;
+}
+
+.blog-title {
+  font-size: 1.4em;
+  margin: 10px;
+}
+
+.blog-description {
+  font-size: 1em;
+  margin: 10px;
+  color: #555;
+}
+
+.image {
+  width: 100%;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #202020;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 5px 0;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+.links {
+  text-align: center;
+}
+
+.button {
+  padding: 0.5em 0.7em;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  font-size: 1.1em;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.link-button:hover {
+  color: #424a53;
+  border-bottom: 2px solid #4b5a69;
+}
+
+.Learning {
+  color: white;
+}
+
+.about {
+  color: whitesmoke;
+}
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+  .blog {
+    margin: 20px 10px;
+  }
+
+  .blog-title {
+    font-size: 1.2em;
+  }
+
+  .blog-description {
+    font-size: 0.95em;
+  }
+
+  footer {
+    padding: 15px 10px;
+  }
+
+  footer p {
+    font-size: 0.9em;
+  }
+
+  .heading {
+    font-size: 1.2em;
+    max-width: 100%;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .date {
+    font-size: 10px;
+  }
+
+  .skills-heading,
+  .contact-heading {
+    font-size: 1em;
+  }
+
+  .skills-list,
+  .contact-list {
+    font-size: 0.9em;
+  }
+
+  .skills-heading {
+    color: whitesmoke;
+  }
+
+  .skills-list {
+    color: white;
+  }
+
+  .contact-heading {
+    color: white;
+  }
+
+  .contact-list {
+    color: white;
+  }
+}
+
+/* Medium screens (tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .heading {
+    font-size: 1.6em;
+  }
+
+  .description {
+    font-size: 17px;
+  }
+  .span {
+    font-size: px;
+  }
+  .date {
+    font-size: 14px;
+  }
+
+  .skills-heading,
+  .contact-heading {
+    font-size: 1.1em;
+  }
+
+  .skills-list,
+  .contact-list {
+    font-size: 0.95em;
+  }
+  .skills-heading {
+    color: whitesmoke;
+  }
+
+  .skills-list {
+    color: white;
+  }
+
+  .contact-heading {
+    color: white;
+  }
+
+  .contact-list {
+    color: white;
+  }
+  footer p {
+    font-size: 1em;
+  }
+  .button {
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  .title h5 {
+    font-size: 1em;
+  }
+}
+
+/* Large screens (desktops) */
+@media (min-width: 1025px) {
+  .heading {
+    font-size: 1.8em;
+  }
+
+  .description {
+    font-size: 24px;
+  }
+
+  .date {
+    font-size: 17px;
+  }
+
+  .skills-heading,
+  .contact-heading {
+    font-size: 1.3em;
+  }
+
+  .skills-list,
+  .contact-list {
+    font-size: 1em;
+  }
+  .skills-heading {
+    color: whitesmoke;
+    font-size: 1.5em;
+  }
+
+  .skills-list {
+    color: white;
+    font-size: 1.3em;
+  }
+
+  .contact-heading {
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .contact-list {
+    color: white;
+    font-size: 1.3em;
+  }
+
+  footer p {
+    font-size: 1.3em;
+  }
+  .button {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .title h5 {
+    font-size: 1.5em;
+  }
+  .title img {
+    width: 33px;
+  }
+  .content-container {
+    margin: 0;
+  }
+  .blog-date {
+    font-size: 1.4em;
+  }
+  .blog-title {
+    font-size: 1.9em;
+  }
+  .blog-description {
+    font-size: 1.7em;
+  }
+}
+.span {
+  margin: 1em 0;
+  color: white;
+  font-size: 12px;
+}
